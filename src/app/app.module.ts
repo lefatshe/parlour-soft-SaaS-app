@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { HomeComponent } from './pages/home/home.component';
+import { RegisterComponent } from './pages/authorization/register/register.component';
+import { LoginComponent } from './pages/authorization/login/login.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { HomeComponent } from './pages/home/home.component';
     AppComponent,
     PageNotFoundComponent,
     PageHeaderComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
