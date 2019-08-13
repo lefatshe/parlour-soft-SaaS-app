@@ -4,12 +4,14 @@ import {LoginComponent} from './pages/authorization/login/login.component';
 import {RegisterComponent} from './pages/authorization/register/register.component';
 import {HomeComponent} from './pages/home/home.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {DashboardHomeComponent} from './pages/dashboard-home/dashboard-home.component';
 
 const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
   },
+  // Auth
   {
     path: 'login',
     component: LoginComponent
@@ -17,6 +19,11 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  // Admin
+  {
+    path: 'account',
+    component: DashboardHomeComponent
   },
   { path: '',
     redirectTo: '/home',
