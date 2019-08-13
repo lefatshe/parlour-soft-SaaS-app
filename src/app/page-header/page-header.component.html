@@ -387,12 +387,20 @@
 
         </div>
 
-        <a [routerLink]="['/login']" class="HeaderMenu-link no-underline mr-3">
+        <a *ngIf="!authStatus" [routerLink]="['/login']" class="HeaderMenu-link no-underline mr-3">
           Login
         </a>
-        <a [routerLink]="['/register']" class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1">
+        <a *ngIf="!authStatus" [routerLink]="['/register']" class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1">
           Register &nbsp;
         </a>
+
+        <a *ngIf="authStatus" [routerLink]="['/login']" class="HeaderMenu-link no-underline mr-3">
+          The Parlour XV - 403
+        </a>
+        <a *ngIf="authStatus" [routerLink]="['/']" class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1">
+          logout &nbsp;
+        </a>
+
       </div>
     </div>
   </div>

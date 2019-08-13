@@ -8,6 +8,7 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RegisterComponent } from './pages/authorization/register/register.component';
 import { LoginComponent } from './pages/authorization/login/login.component';
+import { DashboardHomeComponent } from './pages/dashboard-home/dashboard-home.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { LoginComponent } from './pages/authorization/login/login.component';
     PageHeaderComponent,
     HomeComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardHomeComponent
   ],
   imports: [
     BrowserModule,
