@@ -1,0 +1,86 @@
+<app-page-header></app-page-header>
+
+<div class="container-lg p-responsive py-5">
+  <div class="setup-header setup-org">
+    <h1>Register</h1>
+    <p class="lead">The best way to manage, build, and run a Parlour office.</p>
+    <ol class="steps">
+      <li class="current text-center text-md-left">
+        <svg height="32" class="octicon octicon-person float-none float-md-left mx-auto mr-md-3" viewBox="0 0 12 16"
+             version="1.1" width="24" aria-hidden="true">
+          <path fill-rule="evenodd"
+                d="M12 14.002a.998.998 0 0 1-.998.998H1.001A1 1 0 0 1 0 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z"></path>
+        </svg>
+        <strong class="step">User 1:</strong>
+        Parlour
+      </li>
+      <li class="text-center text-md-left">
+        <svg height="32" class="octicon octicon-person float-none float-md-left mx-auto mr-md-3" viewBox="0 0 12 16"
+             version="1.1" width="24" aria-hidden="true">
+          <path fill-rule="evenodd"
+                d="M12 14.002a.998.998 0 0 1-.998.998H1.001A1 1 0 0 1 0 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z"></path>
+        </svg>
+        <strong class="step">User 2:</strong>
+        Broker
+      </li>
+      <li class="text-center text-md-left">
+        <svg height="32" class="octicon octicon-person float-none float-md-left mx-auto mr-md-3" viewBox="0 0 12 16"
+             version="1.1" width="24" aria-hidden="true">
+          <path fill-rule="evenodd"
+                d="M12 14.002a.998.998 0 0 1-.998.998H1.001A1 1 0 0 1 0 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z"></path>
+        </svg>
+        <strong class="step">User 3:</strong>
+        Underwriter
+      </li>
+
+    </ol>
+
+    <div class="d-md-flex flex-justify-between gutter-md-spacious ">
+      <div class="col-sm-8 col-md-6 setup-form-container">
+        <hr/>
+        <h2 class="f2-light mb-1">
+          Create your business account
+        </h2>
+        <form>
+          <dl class="form-group required errored">
+            <dt class="input-label">
+              <label name="user[login]" autocapitalize="off" autofocus="autofocus" required="required" for="user_login">Username</label></dt>
+              <dd><input name="user[login]" autocapitalize="off" autofocus="autofocus" required="required" class="form-control is-autocheck-errored" type="text" id="user_login" autocomplete="off" spellcheck="false">
+                <p class="note" id="description_80e0581d125c"><div class="m-1">
+                  <div class="mb-1">Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.</div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-group required">
+            <dt class="input-label">
+              <label name="user[email]" autocapitalize="off" required="required" for="user_email">Email address</label></dt>
+            <dd><input aria-describedby="description_08e3ea385b86" name="user[email]" autocapitalize="off" required="required" class="form-control" type="text" id="user_email" autocomplete="off" spellcheck="false">
+              <p class="note" id="description_08e3ea385b86">We’ll occasionally send updates about your account to this inbox. We’ll never share your email address with anyone.</p>
+            </dd>
+          </dl>
+          <dl class="form-group mb-2 required successed">
+            <dt class="input-label">
+              <label name="user[password]" required="required" for="user_password">Password</label></dt>
+            <dd><input name="user[password]" required="required" class="form-control" type="password" id="user_password">
+            </dd>
+          </dl>
+          <div class="">
+            <h2 class="f2-light mb-3">
+              Verify account
+            </h2>
+            <img src="../../../assets/verify.PNG" width="95%">
+            <hr/>
+            <p class="tos-info">By clicking “Create an account” below, you agree to our
+              <a href="" target="_blank">Terms of Service</a> and
+              <a href="" target="_blank">Privacy Statement</a>. We’ll occasionally send you account-related emails.</p>
+            <hr/>
+            <button type="submit" class="btn btn-primary js-octocaptcha-form-submit" id="signup_button" data-disable-invalid="" data-disable-with="Creating account…" disabled="">
+              Continue on account
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+      </div>
+</div>

@@ -1,9 +1,14 @@
 {
-  "name": "parlour-soft",
-  "version": "0.0.0",
+  "name": "parloursoft",
+  "version": "0.3.0",
+  "description": "a node app",
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "node index.js",
     "prod": "ng build",
     "dev": "ng serve --port 4401",
     "test": "ng test",
@@ -11,8 +16,8 @@
     "e2e": "ng e2e",
     "postinstall": "ng build --aot --prod"
   },
-  "private": true,
   "dependencies": {
+    "ejs": "^2.5.6",
     "@angular/animations": "^7.0.4",
     "@angular/cdk": "^7.1.1",
     "@angular/common": "~7.0.0",
@@ -32,6 +37,8 @@
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0",
     "@angular-devkit/build-angular": "~0.13.0",
     "@angular/cli": "~7.3.4",
     "@angular/compiler-cli": "~7.2.0",
@@ -52,8 +59,10 @@
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
   },
-  "engines": {
-    "node": "~10.16.0",
-    "npm": "~6.10.1"
-  }
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }

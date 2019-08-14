@@ -3,17 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jwt-auth": {
+    "ParlourSoft": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/jwt-auth",
+            "outputPath": "dist/ParlourSoft",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -57,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "jwt-auth:build"
+            "browserTarget": "ParlourSoft:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "jwt-auth:build:production"
+              "browserTarget": "ParlourSoft:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jwt-auth:build"
+            "browserTarget": "ParlourSoft:build"
           }
         },
         "test": {
@@ -79,7 +84,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -102,7 +107,7 @@
         }
       }
     },
-    "jwt-auth-e2e": {
+    "ParlourSoft-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "jwt-auth:serve"
+            "devServerTarget": "ParlourSoft:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "jwt-auth:serve:production"
+              "devServerTarget": "ParlourSoft:serve:production"
             }
           }
         },
@@ -131,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "jwt-auth"
+  "defaultProject": "ParlourSoft"
 }
