@@ -1,11 +1,16 @@
-<!--<div class="header header-logged-out width-full pt-5 pb-4" role="banner">-->
-<!--  <div class="container clearfix width-full text-center">-->
-<!--    <a class="header-logo" href="/" aria-label="Homepage">-->
-<!--      <img src="../../../assets/symbol-blk.png" width="80px">-->
-<!--    </a>-->
-<!--  </div>-->
-<!--</div>-->
+<div class="header header-logged-out width-full pt-5 pb-4" role="banner">
+  <div class="container clearfix width-full text-center">
+    <a class="header-logo" href="/" aria-label="Homepage">
+      <img src="../../../assets/logo-full.png" width="180px">
+    </a>
+  </div>
+</div>
 
+<hr/>
+
+<div class="err">
+  <span> {{authErrorLogger}} </span>
+</div>
 
 <div class="application-main " data-commit-hovercards-enabled="">
   <main id="js-pjax-container" data-pjax-container="">
@@ -17,22 +22,22 @@
 
         <div style="" class="login mt-3">
 
-          <label for="login_field">Username or email address</label>
+<!--          <label for="login_field">Username or email address</label>-->
           <input type="text" id="emailAddress"
                  placeholder="Username or email address"
                  autocomplete="off"
                  class="form-control input-block"
                  formControlName="emailAddress"
                  required autofocus="autofocus">
-
-          <label for="password">Password <a class="label-link" href="/password_reset">Forgot password?</a></label>
+<br/>
+<!--          <label for="password">Password <a class="label-link" href="/password_reset">Forgot password?</a></label>-->
           <input type="password"
                  class="form-control input-block"
                  id="password"
                  placeholder="Password"
                  formControlName="password"
                  required>
-          <hr/>
+          <p>In case you have <a class="label-link" href="/password_reset">Forgotten password?</a></p>
           <button type="submit" class="btn btn-block" [disabled]="!loginForm.valid">Continue</button>
         </div>
 

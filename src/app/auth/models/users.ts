@@ -3,3 +3,8 @@ export class User {
   password: string;
   loginType: number;
 }
+
+export class ErrRes {
+  show: boolean;
+  displayText: string;
+}

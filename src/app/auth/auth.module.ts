@@ -10,12 +10,14 @@ import {AuthService} from './services/auth.service';
 import {TokenInterceptor} from './token.interceptor';
 import {RegisterComponent} from "./containers/register/register.component";
 import {HeaderComponent} from "./containers/header/header.component";
+import {AuthSharedService} from "./services/shared.service";
 
 @NgModule({
   declarations: [LoginComponent, RegisterComponent, HeaderComponent],
   providers: [
     AuthGuard,
     AuthService,
+    AuthSharedService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,

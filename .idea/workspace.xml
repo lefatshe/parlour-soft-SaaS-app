@@ -2,39 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9820a16-e280-42ed-9992-a874bebca974" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/auth/containers/header/header.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/auth/containers/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/auth/models/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/auth/services/shared.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/containers/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/containers/login/login.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/auth/containers/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/containers/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/auth/containers/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/containers/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/auth/guards/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/guards/auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/auth/guards/random.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/guards/account.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/models/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/models/users.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/auth/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/authorization/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/authorization/login/login.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/containers/header/header.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/authorization/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/authorization/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/authorization/register/register.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/authorization/register/register.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/authorization/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/containers/header/header.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/authorization/register/register.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/random/containers/random-number/random-number.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/random/containers/random-number/random-number.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/random/containers/random-number/random-number.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/random/containers/random-number/random-number.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/random/models/randomNumber.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/random/random.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/account/account.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/random/random.routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/account/account.routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/random/services/random-number.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/auth/containers/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+            <state relative-caret-position="272">
+              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -59,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/auth/containers/login/login.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            <state relative-caret-position="654">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -69,13 +45,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/auth/containers/login/login.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/auth/services/auth.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="538">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/auth/services/shared.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="44" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/auth/auth.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#380#426#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/auth/models/users.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/auth/models/auth.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -105,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/auth/containers/login/login.component.css" />
         <option value="$PROJECT_DIR$/src/app/random/containers/random-number/random-number.component.html" />
         <option value="$PROJECT_DIR$/src/app/auth/guards/auth.guard.ts" />
         <option value="$PROJECT_DIR$/src/app/account/account.module.ts" />
@@ -116,12 +143,18 @@
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/src/app/auth/containers/header/page-header.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/auth/auth.module.ts" />
         <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/src/app/auth/containers/register/register.component.html" />
         <option value="$PROJECT_DIR$/src/app/auth/containers/header/header.component.html" />
-        <option value="$PROJECT_DIR$/src/app/auth/containers/login/login.component.html" />
+        <option value="$PROJECT_DIR$/src/app/auth/services/auth.shared.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/models/autherror.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/models/auth.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/auth.module.ts" />
         <option value="$PROJECT_DIR$/src/app/auth/services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/services/shared.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/containers/login/login.component.css" />
+        <option value="$PROJECT_DIR$/src/app/auth/models/users.ts" />
+        <option value="$PROJECT_DIR$/src/app/auth/containers/login/login.component.html" />
         <option value="$PROJECT_DIR$/src/app/auth/containers/login/login.component.ts" />
       </list>
     </option>
@@ -180,6 +213,22 @@
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="parlour-soft-SaaS-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parlour-soft-SaaS-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parlour-soft-SaaS-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parlour-soft-SaaS-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -189,7 +238,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/auth/models" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -197,10 +246,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\sechaba.mothobi\parlour-soft-SaaS-app\src\app\auth\models" />
+      <recent name="C:\sechaba.mothobi\parlour-soft-SaaS-app\src\app\auth\services" />
       <recent name="C:\sechaba.mothobi\parlour-soft-SaaS-app\src" />
       <recent name="C:\sechaba.mothobi\parlour-soft-SaaS-app\src\app\auth\containers" />
       <recent name="C:\sechaba.mothobi\parlour-soft-SaaS-app\src\app\auth\guards" />
-      <recent name="C:\sechaba.mothobi\parlour-soft-SaaS-app\src\app\account" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -234,12 +284,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565815674803</updated>
-      <workItem from="1565815679742" duration="12074000" />
+      <workItem from="1565815679742" duration="17624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12074000" />
+    <option name="totallyTimeSpent" value="17624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-675" width="1936" height="1056" extended-state="6" />
@@ -251,7 +301,7 @@
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" weight="0.37853107" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.15817985" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.12567714" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -341,9 +391,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/auth/containers/login/login.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1513">
@@ -476,17 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/auth/auth.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#380#426#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -565,27 +601,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/auth/containers/login/login.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/auth/containers/login/login.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/auth/services/auth.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="538">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/models/users.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/services/shared.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/containers/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/auth.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#380#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/models/auth.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/auth/containers/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        <state relative-caret-position="654">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>

@@ -5,6 +5,7 @@ import { catchError, mapTo, tap } from 'rxjs/operators';
 import { config } from './../../config';
 import { Tokens } from '../models/tokens';
 import { User } from '../models/users';
+import {AuthSharedService} from "./shared.service";
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class AuthService {
   private authMessages: string;
   private ErrorLog = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private shared: AuthSharedService) {}
 
   login(user: User ): Observable<boolean> {
     return this.http.post<any>(`${config.apiUrl}/auth/request/token`, user)
@@ -26,7 +27,9 @@ export class AuthService {
         mapTo(true),
         catchError(error => {
           this.authMessages = error.error.message
-          alert(error.error.message)
+          // Push to shared service
+          this.shared.authResponse(error.error);
+          // console.log(error)
           return of(false);
         }));
   }
