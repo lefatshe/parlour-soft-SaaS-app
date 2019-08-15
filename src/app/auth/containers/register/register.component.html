@@ -1,1 +1,89 @@
 <page-header></page-header>
+
+<div class="container-lg p-responsive py-5">
+  <div class="setup-header setup-org">
+    <h1>Register</h1>
+    <p class="lead">The best way to manage, build, and run a Parlour office.</p>
+
+    <ol class="steps">
+      <li class="current text-center text-md-left">
+        <svg height="32" class="octicon octicon-person float-none float-md-left mx-auto mr-md-3" viewBox="0 0 12 16"
+             version="1.1" width="24" aria-hidden="true">
+          <path fill-rule="evenodd"
+                d="M12 14.002a.998.998 0 0 1-.998.998H1.001A1 1 0 0 1 0 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z"></path>
+        </svg>
+        <strong class="step">User 1:</strong>Parlour
+      </li>
+      <li class="text-center text-md-left">
+        <svg height="32" class="octicon octicon-person float-none float-md-left mx-auto mr-md-3" viewBox="0 0 12 16"
+             version="1.1" width="24" aria-hidden="true">
+          <path fill-rule="evenodd"
+                d="M12 14.002a.998.998 0 0 1-.998.998H1.001A1 1 0 0 1 0 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z"></path>
+        </svg>
+        <strong class="step">User 2:</strong>Broker
+      </li>
+      <li class="text-center text-md-left">
+        <svg height="32" class="octicon octicon-person float-none float-md-left mx-auto mr-md-3" viewBox="0 0 12 16"
+             version="1.1" width="24" aria-hidden="true">
+          <path fill-rule="evenodd"
+                d="M12 14.002a.998.998 0 0 1-.998.998H1.001A1 1 0 0 1 0 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z"></path>
+        </svg>
+        <strong class="step">User 3:</strong> Underwriter
+      </li>
+    </ol>
+
+    <div class="d-md-flex flex-justify-between gutter-md-spacious ">
+      <div class="col-sm-8 col-md-6 setup-form-container">
+        <hr/>
+        <h2 class="f2-light mb-1">
+          Create your business account
+        </h2>
+        <!-- Reg form -->
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+          <dl class="form-group">
+            <!-- Username -->
+            <dt class="input-label"><label name="user[login]" autocapitalize="off" autofocus="autofocus" required="required" for="user_login">Email</label></dt><dd>
+              <input autofocus="autofocus"
+                     required="required"
+                     class="form-control is-autocheck-errored"
+                     type="text" id="user_login" autocomplete="off" spellcheck="false"
+                     formControlName="username">
+              <div class="m-1"><div class="mb-1">Provide a valid email address.</div></div>
+            </dd>
+            <!-- Cellphone -->
+            <dl class="form-group required">
+              <dt class="input-label"><label name="user[email]" autocapitalize="on" required="required">Cellphone</label></dt><dd>
+              <input required="required" class="form-control" type="number" formControlName="cellphone">
+                <p class="note">The Cellphone must be 10 characters long.</p></dd>
+            </dl>
+            <!-- Password -->
+            <dl class="form-group required">
+              <dt class="input-label"><label required="required">Password</label></dt><dd>
+              <input autocapitalize="off" required="required" class="form-control" type="text" autocomplete="off" formControlName="password">
+              <p class="note">Assert a string has at least one number.</p></dd>
+            </dl>
+            <!-- Confirm Password -->
+            <dl class="form-group required">
+              <dt class="input-label"><label required="required">Password</label></dt><dd>
+              <input autocapitalize="off"
+                     required="required" class="form-control" type="text"
+                     autocomplete="off" formControlName="confirmPassword">
+              <p class="note">Retype Password.</p></dd>
+            </dl>
+
+
+          </dl>
+
+          <div class="err">
+            <span> {{regError}} </span>
+          </div>
+
+          <button type="submit" class="col-sm-8 col-md-6 btn btn-block" [disabled]="!registerForm.valid">Continue</button>
+        </form>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>

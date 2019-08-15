@@ -6,14 +6,20 @@ import {AuthErrorRes} from "../models/auth";
   providedIn: 'root'
 })
 export class AuthSharedService {
-  public authErrorLogger: EventEmitter<any>;
+  public authErrorMsg: EventEmitter<any>;
+  public regErrorMsg: EventEmitter<any>;
 
 
   constructor() {
-    this.authErrorLogger = new EventEmitter();
+    this.authErrorMsg = new EventEmitter();
+    this.regErrorMsg = new EventEmitter();
   }
 
   public authResponse(logger): void {
-    this.authErrorLogger = logger
+    this.authErrorMsg = logger.message
+  }
+  public regResponse(logger) {
+    console.log('regError', logger)
+    this.regErrorMsg = logger
   }
 }

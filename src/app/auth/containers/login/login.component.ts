@@ -12,7 +12,7 @@ import {AuthSharedService} from "../../services/shared.service";
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
-  public authErrorLogger: EventEmitter<any>;
+  authError: EventEmitter<any>;
   constructor(private authService: AuthService, private sharedService: AuthSharedService, private formBuilder: FormBuilder, private router: Router) {
   }
 
@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
         if (success) {
           this.router.navigate(['/account']);
         } else {
-          this.authErrorLogger = this.sharedService.authErrorLogger.message
+          this.authError = this.sharedService.authErrorMsg
           // console.log(this.sharedService.authErrorLogger)
         }
       });
