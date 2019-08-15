@@ -14,7 +14,7 @@ export class AuthService {
   private readonly JWT_TOKEN = 'JWT_TOKEN';
   private readonly REFRESH_TOKEN = 'REFRESH_TOKEN';
   private loggedUser: string;
-  private UserMessages: string;
+  private authMessages: string;
   private ErrorLog = false;
 
   constructor(private http: HttpClient) {}
@@ -25,6 +25,7 @@ export class AuthService {
         tap(tokens => this.doLoginUser(user.emailAddress, tokens)),
         mapTo(true),
         catchError(error => {
+          this.authMessages = error.error.message
           alert(error.error.message)
           return of(false);
         }));

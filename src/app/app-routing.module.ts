@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './auth/containers/login/login.component';
-import {RegisterComponent} from './pages/authorization/register/register.component';
-import {HomeComponent} from './pages/home/home.component';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {LoginComponent} from './auth/containers/login/login.component';
+import {RegisterComponent} from './auth/containers/register/register.component';
+import {HomeComponent} from './home/home.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
-import { AuthGuard } from './auth/guards/auth.guard';
-import { RandomGuard } from './auth/guards/random.guard';
+import {AuthGuard} from './auth/guards/auth.guard';
+import {AccountGuard} from './auth/guards/account.guard';
 
 const routes: Routes = [
   {
@@ -18,24 +18,27 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'secret-random-number',
-    loadChildren: './random/random.module#RandomModule',
-    canActivate: [RandomGuard],
-    canLoad: [RandomGuard]
-  },
-  {
     path: 'register',
     component: RegisterComponent
   },
-  { path: '',
+  // account
+  {
+    path: 'account',
+    loadChildren: './account/account.module#AccountModule',
+    canActivate: [AccountGuard],
+    canLoad: [AccountGuard]
+  },
+  {
+    path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: '**', component: PageNotFoundComponent }
+  {path: '**', component: PageNotFoundComponent}
 ]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

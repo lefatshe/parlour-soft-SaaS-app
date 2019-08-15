@@ -1,21 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { LoginComponent } from './containers/login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
-import { MatButtonModule, MatFormFieldModule, MatInputModule, MatChipsModule } from '@angular/material';
-import { AuthGuard } from './guards/auth.guard';
-import { AuthService } from './services/auth.service';
-import { RandomGuard } from './guards/random.guard';
-import { TokenInterceptor } from './token.interceptor';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {LoginComponent} from './containers/login/login.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import {RouterModule} from '@angular/router';
+// import { MatButtonModule} from '@angular/material';
+import {AuthGuard} from './guards/auth.guard';
+import {AuthService} from './services/auth.service';
+import {TokenInterceptor} from './token.interceptor';
+import {RegisterComponent} from "./containers/register/register.component";
+import {HeaderComponent} from "./containers/header/header.component";
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LoginComponent, RegisterComponent, HeaderComponent],
   providers: [
     AuthGuard,
     AuthService,
-    RandomGuard,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,
@@ -27,10 +27,8 @@ import { TokenInterceptor } from './token.interceptor';
     RouterModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatChipsModule
+    // MatButtonModule,
   ]
 })
-export class AuthModule { }
+export class AuthModule {
+}

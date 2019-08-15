@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     )
       .subscribe(success => {
         if (success) {
-          this.router.navigate(['/secret-random-number']);
+          this.router.navigate(['/account']);
         }
       });
   }

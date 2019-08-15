@@ -1,17 +1,17 @@
-<div class="header header-logged-out width-full pt-5 pb-4" role="banner">
-  <div class="container clearfix width-full text-center">
-    <a class="header-logo" href="/" aria-label="Homepage">
-      <img src="../../../assets/symbol-blk.png" width="80px">
-    </a>
-  </div>
-</div>
+<!--<div class="header header-logged-out width-full pt-5 pb-4" role="banner">-->
+<!--  <div class="container clearfix width-full text-center">-->
+<!--    <a class="header-logo" href="/" aria-label="Homepage">-->
+<!--      <img src="../../../assets/symbol-blk.png" width="80px">-->
+<!--    </a>-->
+<!--  </div>-->
+<!--</div>-->
 
 
 <div class="application-main " data-commit-hovercards-enabled="">
   <main id="js-pjax-container" data-pjax-container="">
     <div class="auth-form px-3" id="login">
       <div style="text-align: center">
-        <h2>Sign in to ParlourSoft</h2>
+<!--        <h2>Sign in to ParlourSoft</h2>-->
       </div>
       <form [formGroup]="loginForm" (ngSubmit)="login()">
 
@@ -19,7 +19,7 @@
 
           <label for="login_field">Username or email address</label>
           <input type="text" id="emailAddress"
-                 placeholder="emailAddress"
+                 placeholder="Username or email address"
                  autocomplete="off"
                  class="form-control input-block"
                  formControlName="emailAddress"
