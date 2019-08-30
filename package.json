@@ -10,7 +10,7 @@
     "ng": "ng",
     "start": "node index.js",
     "prod": "ng build",
-    "dev": "ng serve --port 4401",
+    "dev": "ng serve --port 4401 --open",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
