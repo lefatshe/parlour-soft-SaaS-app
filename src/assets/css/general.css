@@ -1,0 +1,68 @@
+
+
+
+    .app-loading .spinner {
+      height: 60px;
+      width: 60px;
+      animation: rotate 2s linear infinite;
+      transform-origin: center center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .app-loading .spinner .path {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      animation: dash 1.5s ease-in-out infinite;
+      stroke-linecap: round;
+      stroke: #F6BD49;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+      }
+      100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+      }
+    }
+
+    body.home {
+      background: black;
+    }
+
+    .wpml-ls-statics-footer a {
+      color: #444444;
+      background-color: #ffffff;
+    }
+
+    .wpml-ls-statics-footer a:hover, .wpml-ls-statics-footer a:focus {
+      color: #000000;
+      background-color: #eeeeee;
+    }
+
+    .wpml-ls-statics-footer .wpml-ls-current-language > a {
+      color: #444444;
+      background-color: #ffffff;
+    }
+
+    .wpml-ls-statics-footer .wpml-ls-current-language:hover > a, .wpml-ls-statics-footer .wpml-ls-current-language > a:focus {
+      color: #000000;
+      background-color: #eeeeee;
+    }
